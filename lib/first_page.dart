@@ -34,7 +34,7 @@ class FirstPage extends StatelessWidget {
               },
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Container(
@@ -43,11 +43,10 @@ class FirstPage extends StatelessWidget {
               scrollDirection: Axis.vertical,
               itemCount: 10,
               itemBuilder: (context, count) {
-                Container(
-                  decoration: BoxDecoration(),
+              return  Container(
+                  decoration:  const BoxDecoration(    color: Color.fromARGB(255, 230, 86, 9),),
                   height: 50,
                   width: 70,
-                  color: Color.fromARGB(255, 230, 86, 9),
                   child: Center(
                     child: Text(
                       'Container $count',
